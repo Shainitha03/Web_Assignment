@@ -3,40 +3,28 @@ index.html
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bio-data | My Website</title>
+    <title>My Personal Website</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>My Bio-data</h1>
+        <h1>Welcome to My Personal Website</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="resume.html">Resume</a>
+            <a href="biodata.html">Bio-Data</a>
         </nav>
     </header>
 
-    <section class="container">
-        <img src="assets/profile.jpg" class="profile">
-
-        <h2>Personal Information</h2>
-        <table>
-            <tr><td>Name</td><td>Shainitha Salian</td></tr>
-            <tr><td>Date of Birth</td><td>DD/MM/YYYY</td></tr>
-            <tr><td>Gender</td><td>Female</td></tr>
-            <tr><td>Email</td><td>example@gmail.com</td></tr>
-            <tr><td>Phone</td><td>9876543210</td></tr>
-            <tr><td>Address</td><td>Your Address Here</td></tr>
-            <tr><td>Languages Known</td><td>English, Hindi, Kannada</td></tr>
-            <tr><td>Nationality</td><td>Indian</td></tr>
-        </table>
+    <section class="hero">
+        <h2>Hello, I am <span class="highlight">Your Name</span></h2>
+        <p>This website contains my Resume and Bio-Data.</p>
+        <button id="btn">Click Me</button>
     </section>
 
-    <footer>
-        © 2025 My Website
-    </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
 
@@ -46,9 +34,8 @@ resume.html
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Resume | My Website</title>
+    <title>Resume</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -57,42 +44,72 @@ resume.html
         <nav>
             <a href="index.html">Home</a>
             <a href="resume.html">Resume</a>
+            <a href="biodata.html">Bio-Data</a>
         </nav>
     </header>
 
-    <section class="container">
+    <section class="content">
         <h2>Career Objective</h2>
-        <p>To secure a challenging position where I can contribute my skills and grow professionally.</p>
+        <p>To work in a challenging environment where I can learn and grow.</p>
 
-        <h2>Educational Qualification</h2>
+        <h2>Education</h2>
         <ul>
-            <li>Bachelor of Computer Applications (BCA)</li>
+            <li>B.E in CSE – VTU</li>
             <li>PUC – Science</li>
-            <li>SSLC</li>
+            <li>SSLC – State Board</li>
         </ul>
 
-        <h2>Technical Skills</h2>
+        <h2>Skills</h2>
         <ul>
             <li>HTML, CSS, JavaScript</li>
             <li>Python, Java</li>
-            <li>MS Office, SQL</li>
+            <li>MySQL</li>
         </ul>
 
         <h2>Projects</h2>
-        <p><strong>Project Name:</strong> Student Management System</p>
-        <p><strong>Description:</strong> A web-based application to maintain student records.</p>
-
-        <h2>Strengths</h2>
-        <ul>
-            <li>Good Communication</li>
-            <li>Teamwork</li>
-            <li>Quick Learner</li>
-        </ul>
+        <p><b>Project Name:</b> VTU Result System</p>
+        <p><b>Description:</b> A web application to fetch and display student results.</p>
     </section>
 
-    <footer>
-        © 2025 My Website
-    </footer>
+</body>
+</html>
+
+
+biodata.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bio-data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Bio-Data</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="biodata.html">Bio-Data</a>
+        </nav>
+    </header>
+
+    <section class="content">
+
+        <table class="biodata-table">
+            <tr><th>Name</th><td>Your Name</td></tr>
+            <tr><th>Father's Name</th><td>Father Name</td></tr>
+            <tr><th>Mother's Name</th><td>Mother Name</td></tr>
+            <tr><th>Date of Birth</th><td>DD/MM/YYYY</td></tr>
+            <tr><th>Gender</th><td>Female/Male</td></tr>
+            <tr><th>Address</th><td>Your full address</td></tr>
+            <tr><th>Nationality</th><td>Indian</td></tr>
+            <tr><th>Languages Known</th><td>English, Kannada, Hindi</td></tr>
+            <tr><th>Hobbies</th><td>Reading, Music</td></tr>
+        </table>
+
+    </section>
 
 </body>
 </html>
@@ -102,56 +119,54 @@ style.css
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #f4f6f9;
+    background: #f4f4f4;
 }
 
 header {
     background: #333;
     color: white;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
 }
 
 nav a {
-    margin: 0 15px;
-    color: #fff;
-    text-decoration: none;
-}
-
-.container {
-    width: 80%;
-    margin: 30px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.profile {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-table, td {
-    width: 100%;
-    border: 1px solid #999;
-    border-collapse: collapse;
-    padding: 8px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #333;
     color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    padding: 50px;
+    text-align: center;
+}
+
+.highlight {
+    color: #e63946;
+    font-weight: bold;
+}
+
+.content {
+    padding: 30px;
+    background: white;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.biodata-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.biodata-table th, .biodata-table td {
+    border: 1px solid #444;
+    padding: 10px;
 }
 
 
 script.js
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelector("header").style.opacity = 0;
-    setTimeout(() => {
-        document.querySelector("header").style.transition = "1s";
-        document.querySelector("header").style.opacity = 1;
-    }, 200);
+$(document).ready(function () {
+    $("#btn").click(function () {
+        alert("Welcome to my website!");
+    });
 });
